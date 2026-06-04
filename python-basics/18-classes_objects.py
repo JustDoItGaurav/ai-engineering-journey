@@ -149,14 +149,16 @@ class BankAccount:
         self.balance -= amount
 
     def display_balance(self):
-        print(f"Balance: {self.balance}")
+        print(f"Account Holder :{self.owner}|Balance: {self.balance}")
 
 account = BankAccount("Gaurav", 1000)
+
 
 account.deposit(500)
 account.withdraw(200)
 
 account.display_balance()
+
 
 # ============================================================
 # PRACTICAL EXAMPLE 2
