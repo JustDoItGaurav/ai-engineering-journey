@@ -133,7 +133,7 @@ print(series[1:4])
 
 series = pd.Series([10, 20, 30, 40, 50])
 
-print(series[-1])
+print(series.iloc[-1])
 
 # Note:
 # In newer pandas versions use:
