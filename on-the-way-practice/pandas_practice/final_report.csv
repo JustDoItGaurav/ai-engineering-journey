@@ -1,0 +1,5 @@
+EmpID,Name,DeptID,Salary,Department,Average Salary,Bonus
+1,John,101,70000,IT,75000.0,7000.0
+2,Alice,102,50000,HR,50000.0,5000.0
+3,Bob,101,80000,IT,75000.0,8000.0
+4,Emma,103,60000,Finance,60000.0,6000.0
