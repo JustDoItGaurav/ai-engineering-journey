@@ -15,3 +15,29 @@ Fill missing salary with median salary.
 Drop rows where Name is missing.
 
 Concepts: Missing Values, Data Cleaning"""
+
+import pandas as pd
+
+data = {
+    "Name": ["John", "Alice", None, "Mike"],
+    "Age": [25, None, 30, 28],
+    "Salary": [50000, 60000, None, 55000]
+}
+
+df=pd.DataFrame(data)
+print(df)
+
+print(df.isna())
+
+print(df.isna().sum())
+
+df["Age"]=df["Age"].fillna(df["Age"].mean())
+
+print(df)
+
+df["Salary"]=df["Salary"].fillna(df["Salary"].median())
+
+print(df)
+
+df=df.dropna(subset=["Name"])
+print(df)

@@ -14,3 +14,28 @@ Find the employee with the highest salary.
 Add a new column Bonus = Salary * 0.1.
 
 Concepts: DataFrame, Filtering, GroupBy"""
+
+import pandas as pd
+
+employees = {
+    "Name": ["John", "Alice", "Bob", "Emma", "Mike"],
+    "Department": ["IT", "HR", "IT", "Finance", "HR"],
+    "Salary": [70000, 50000, 80000, 60000, 55000]
+}
+
+df=pd.DataFrame(employees)
+print(df)
+
+print(df[df["Salary"]>60000])
+
+print(f"Average Salary:{df["Salary"].mean()}")
+
+
+dept=df.groupby("Department")
+print(dept["Salary"].mean())
+
+print(df.loc[df["Salary"].idxmax()])
+
+df["Bonus"]=df["Salary"]*0.1
+
+print(df)

@@ -2,11 +2,7 @@
 
 Create a CSV manually:
 
-Name,Age,City
-John,25,New York
-Alice,,Chicago
-Bob,30,
-Mike,28,Boston
+
 Questions
 Read the CSV.
 Detect missing values.
@@ -15,3 +11,20 @@ Fill missing city with "Unknown".
 Save cleaned data to a new CSV.
 
 Concepts: Reading Files, Missing Values, Data Cleaning"""
+
+import pandas as pd
+
+df=pd.read_csv("students.csv")
+
+print(df)
+
+print(df.isna())
+
+print(df.isna().sum())
+
+df["Age"]=df["Age"].fillna(df["Age"].mean())
+df["City"]=df["City"].fillna("Unknown")
+
+print(df)
+
+df.to_csv("students.csv",index=False)
