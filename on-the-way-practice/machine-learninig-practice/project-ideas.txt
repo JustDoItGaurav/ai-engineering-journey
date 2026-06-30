@@ -1,0 +1,46 @@
+Final Mini Projects (After Completing All Topics)
+Project 1
+House Price Prediction
+
+Dataset
+
+https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques
+
+Use
+
+Feature Engineering
+Linear Regression
+Random Forest
+Project 2
+Titanic Survival Prediction
+
+Use
+
+Feature Engineering
+Logistic Regression
+Decision Tree
+Random Forest
+
+Compare all models.
+
+Project 3
+Customer Churn Prediction
+
+Dataset
+
+https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+
+Perform
+
+Cleaning
+Feature Engineering
+Model Training
+Evaluation
+Project 4
+Loan Approval Prediction
+
+Dataset
+
+https://www.kaggle.com/datasets/altruistdelhite04/loan-prediction-problem-dataset
+
+Build a complete ML pipeline.
